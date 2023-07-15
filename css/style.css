@@ -24,7 +24,6 @@ nav li{
     font-weight: 500;
     margin-right: 1.875rem;
     list-style: none;
-    color: red;
 }
 nav a{
     color: #424242;
@@ -33,4 +32,21 @@ nav a{
   color: #131313;
   font-size: 2.8125rem;
   font-weight: 700;
+}
+
+/* .banner{} */
+
+.banner_content{
+    max-width: 53.125rem;
+    text-align: center;
+    margin: auto;
+}
+
+.banner_content--title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner_content--text{
+    color: #727272;
 }
