@@ -4,17 +4,16 @@
   text-decoration: none;
 }
 
-.btn--primary{
-    border-radius: 8px;
-background: #FF900E;
-color: #FFF;
-font-size: 1.25rem;
-font-weight: 600;
-padding: 20px 25px;
-cursor: pointer;
-border: none;
+.btn--primary {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  cursor: pointer;
+  border: none;
 }
-
 
 /* style for header */
 
@@ -31,7 +30,6 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 nav li {
@@ -45,7 +43,7 @@ nav a {
 }
 .nav_title {
   color: #131313;
-  font-size: clamp(1.875rem, 10vw,2.8125rem);
+  font-size: clamp(1.875rem, 10vw, 2.8125rem);
   font-weight: 700;
 }
 
@@ -58,7 +56,7 @@ nav a {
 }
 
 .banner_content--title {
-  font-size: clamp(2rem, 15vw,4rem);
+  font-size: clamp(2rem, 15vw, 4rem);
   font-weight: 700;
   color: #131313;
 }
@@ -67,27 +65,61 @@ nav a {
 }
 
 .banner_img {
-    margin-top: 3.125rem;
-    width: 100%;
+  margin-top: 3.125rem;
+  width: 100%;
 }
 
+/* style for main */
+main{
+    max-width: 90rem;
+    margin: 0 auto;
+}
 
+/* style rule for team section */
+.teams_container{
+    display: flex;
+    align-items: center;
+}
+.team_img--container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.team_content{
+    padding: 0 4.375rem;
+}
+.team_content--title{
+    font-size: 2.8125rem;
+}
+.quick_text{
+    color: #727272;
+    font-weight: 500;
+}
+.team_content--title .Features_text{
+    color: #FF900E;
+    font-weight: 700;
+}
+.team_content--text{
+    color: #727272;
+}
 
 /* media queries */
 
-@media screen and (max-width:576px){
-    header{
-        padding: 1.25rem;
-    }
-    nav{
-        flex-direction: column;
-    }
+@media screen and (max-width: 576px) {
+  header {
+    padding: 1.25rem;
+  }
+  nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
-@media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding: 2.5rem;
-    }
-    nav{
-        flex-direction: column;
-    }
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 2.5rem;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
