@@ -1,4 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Work Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+}
+
+/* style for header */
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 2.5rem 13.75rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-right: 1.875rem;
+    list-style: none;
+    color: red;
+}
+nav a{
+    color: #424242;
+}
+.nav_title {
+  color: #131313;
+  font-size: 2.8125rem;
+  font-weight: 700;
 }
