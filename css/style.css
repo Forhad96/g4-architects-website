@@ -82,6 +82,7 @@ main {
 .teams_container {
   display: flex;
   align-items: center;
+  margin: 6.25rem 0;
 }
 .team_img--container {
   display: grid;
@@ -106,18 +107,24 @@ main {
 
 /* style for fact section */
 
-/* .fact_card--container{} */
+.facts{
+  margin: 150px 0;
+}
+
 .fact_card--wrapper{
     display: flex;
     justify-content: space-around;
-    gap: .625rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 6.25rem;
     
 }
 .fact__card {
   border-radius: .5rem;
   border: .0625rem solid #ff900e;
-  padding:3.5rem 2rem;
+  padding:3rem 2rem;
   text-align: center;
+  /* flex: 1 1 10rem; */
 
 }
 .fact_card--stats{
@@ -144,9 +151,11 @@ margin: .625rem;
   .fact_card--wrapper
    {
     flex-direction: column;
-    flex-wrap: wrap;
   }
-
+  nav ul{
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
   .team_img--container {
     grid-template-columns: repeat(1, 1fr);
     gap: 8px;
