@@ -2,6 +2,8 @@
 * {
   font-family: "Work Sans", sans-serif;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 /* img {
   max-width: 100%;
@@ -36,6 +38,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.125rem;
 }
 nav > ul {
   display: flex;
@@ -105,6 +108,46 @@ main {
   font-weight: 700;
 }
 
+
+/* features style */
+.features_container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 100px;
+}
+
+.features_content--card {
+  border-radius: .5rem;
+  background: #fff;
+  box-shadow: 0rem .25rem 1.875rem 0rem rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin: 20px 0;
+}
+.ten_years--badge{
+  border-radius: .5rem;
+background: #FF900E;
+color: #fff;
+text-align: center;
+max-width: 342px;
+padding: 2.5rem;
+position: relative;
+bottom: 100px;
+right: 50px;
+}
+
+.ten_years--badge h5{
+font-size: clamp(1.5625rem, 5vw , 4.0625rem);
+font-weight: 700;
+margin: 0;
+}
+.ten_years--badge p{
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+
+
+
 /* style for fact section */
 
 .facts {
@@ -156,38 +199,6 @@ main {
   margin-top: 3.125rem;
 }
 
-/* features style */
-.features_container {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  gap: 112px;
-}
-
-.features_content--card {
-  border-radius: .5rem;
-  background: #fff;
-  box-shadow: 0rem .25rem 1.875rem 0rem rgba(0, 0, 0, 0.06);
-  padding: 30px;
-  margin-bottom: 20px;
-}
-.ten_years--badge{
-  border-radius: .5rem;
-background: #FF900E;
-color: #fff;
-text-align: center;
-width: 342px;
-}
-
-.ten_years--badge h5{
-font-size: 65px;
-font-weight: 700;
-}
-.ten_years--badge h6{
-  font-size: 1.5625rem;
-  font-weight: 500;
-}
-
 
 /* media queries */
 
@@ -198,7 +209,9 @@ font-weight: 700;
   nav,
   .teams_container,
   .fact_card--wrapper,
-  .sponsors_img--wrapper {
+  .sponsors_img--wrapper,
+  .features_container
+   {
     flex-direction: column;
   }
   nav ul {
@@ -212,6 +225,17 @@ font-weight: 700;
 
   .team_content {
     padding: 0 20px;
+  }
+
+  .features_content--img--wrapper img{
+    width: 90%;
+  }
+
+  .ten_years--badge{
+    position: static;
+    max-width: 12.5rem;
+    padding: 1.25rem;
+    margin: 2.5rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
